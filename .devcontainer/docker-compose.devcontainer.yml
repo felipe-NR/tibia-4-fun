@@ -1,0 +1,6 @@
+services:
+  monorepo:
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    volumes:
+      - .:/home/node/tibia-4-fun:cached

@@ -1,0 +1,24 @@
+services:
+  monorepo:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        - NODE_ENV=development
+    container_name: 'tibia-4-fun-monorepo'
+    command: sh -c "chmod +x ./.docker/keep-container-alive.sh && ./.docker/keep-container-alive.sh"
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/node/tibia-4-fun
+      - pnpm-store:/node/.local/share/pnpm/store
+
+    networks:
+      - tibia-4-fun
+
+networks:
+  tibia-4-fun:
+    driver: bridge
+
+volumes:
+  pnpm-store:
