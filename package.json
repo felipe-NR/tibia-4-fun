@@ -9,8 +9,8 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
-    "turbo": "^2.5.8"
+    "turbo": "^2.6.0"
   },
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@10.20.0",
   "name": "with-vite-react"
 }
