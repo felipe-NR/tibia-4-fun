@@ -1,5 +1,9 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
-  "include": ["."],
-  "exclude": ["node_modules"]
+  "extends": "@tibia-4-fun/typescript-config/react-library.json",
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

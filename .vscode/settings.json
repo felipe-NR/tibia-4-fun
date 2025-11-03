@@ -3,5 +3,19 @@
     {
       "mode": "auto"
     }
+  ],
+  "cSpell.language": "en,pt,pt_BR",
+  "cSpell.dictionaries": [
+    "portuguese",
+    "portuguese-brazilian"
+  ],
+  "cSpell.ignorePaths": [
+    "package.json",
+    "pnpm-lock.yaml",
+    "node_modules",
+    "vscode-extension",
+    ".git/{info,lfs,logs,refs,objects}/**",
+    ".git/{index,*refs,*HEAD}",
+    ".vscode"
   ]
 }

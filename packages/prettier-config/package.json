@@ -1,0 +1,10 @@
+{
+  "name": "@tibia-4-fun/prettier-config",
+  "version": "0.0.1",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": ".prettierrc.js",
+  "dependencies": {
+    "prettier": "^3.3.3"
+  }
+}

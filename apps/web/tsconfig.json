@@ -1,6 +1,9 @@
 {
-  "extends": "@repo/typescript-config/vite.json",
-  "include": ["src"],
+  "extends": "@tibia-4-fun/typescript-config/vite.json",
+  "include": [
+    "src",
+    "utils",
+  ],
   "compilerOptions": {
     "jsx": "react-jsx"
   }

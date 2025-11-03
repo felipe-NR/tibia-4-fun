@@ -1,14 +1,31 @@
 {
-  "name": "@repo/eslint-config",
-  "version": "0.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
-    "eslint-config-prettier": "^9.1.0"
+  "name": "@tibia-4-fun/eslint-config",
+  "version": "0.0.1",
+  "description": "Shared Eslint configuration for @tibia-4-fun",
+  "license": "UNLICENSED",
+  "author": "Felipe Neves <contato@felipenr.com>",
+  "exports": {
+    "./base-eslint-config": "./base-eslint-config.js",
+    "./backend-eslint-config": "./backend-eslint-config.js",
+    "./react-eslint-config": "./react-eslint-config.js",
+    "./frontend-eslint-config": "./frontend-eslint-config.js",
+    "./ui-eslint-config": "./ui-eslint-config.js"
   },
-  "publishConfig": {
-    "access": "public"
+  "files": [
+    "base-eslint-config.js",
+    "backend-eslint-config.js",
+    "react-eslint-config.js",
+    "frontend-eslint-config.js",
+    "ui-eslint-config.js"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "eslint-config-prettier": "^10.1.3",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-turbo": "^2.5.3",
+    "globals": "^16.1.0",
+    "typescript-eslint": "^8.32.0"
   }
 }

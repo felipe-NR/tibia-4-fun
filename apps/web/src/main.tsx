@@ -1,23 +1,24 @@
 import { createRoot } from "react-dom/client";
 import "./style.css";
-import typescriptLogo from "/typescript.svg";
-import { Header, Counter } from "@repo/ui";
+import guildStatsLogo from "/guild-stats.webp";
+import { Header, GuildDataForm } from "@tibia-4-fun/ui";
+// import { messageBuilder } from "../utils/messageBuilder";
 
-const App = () => (
+export const App = () => (
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" className="logo" alt="Vite logo" />
     </a>
     <a href="https://www.typescriptlang.org/" target="_blank">
       <img
-        src={typescriptLogo}
+        src={guildStatsLogo}
         className="logo vanilla"
-        alt="TypeScript logo"
+        alt="guildStats logo"
       />
     </a>
     <Header title="Web" />
     <div className="card">
-      <Counter />
+      <GuildDataForm />
     </div>
   </div>
 );

@@ -1,26 +1,28 @@
 {
-  "name": "@repo/ui",
-  "version": "0.0.0",
+  "name": "@tibia-4-fun/ui",
+  "version": "0.0.1",
   "exports": {
     ".": "./index.ts",
     "./counter": "./components/counter.ts",
     "./header": "./components/header.ts",
     "./setup-counter": "./utils/counter.ts"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint \"**/*.ts\""
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "eslint": "^8.57.0",
-    "typescript": "5.5.4"
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.39.1",
+    "@tibia-4-fun/eslint-config": "workspace:*",
+    "@tibia-4-fun/typescript-config": "workspace:*",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "eslint": "^9.39.0",
+    "typescript": "~5.9.3"
   }
 }
