@@ -2,17 +2,30 @@ import { useActionState } from "react";
 
 export const GuildDataForm = () => {
 
-  const increment = async (
-    previousState: number,
+  const submitAction
+   = async (
+    previousState: string,
   ) => {
-    return previousState + 1;
+    try {
+      const fetchGuildData = await fetch("https://wpp-daily-xp.onrender.com/generate-link");
+      const data = await fetchGuildData.json();
+            const {headers, tableData, replyMessage, apiWhatsappLink, time} = data;
+      console.log("Fetched guild data:", data);
+      return apiWhatsappLink;
+    } catch (error) {
+      console.error("Error fetching guild data:", error);
+      return previousState;
+    }
+
   }
 
-  const [state, formAction] = useActionState(increment, 0);
+  const [state, formAction, isPending] = useActionState(submitAction, "");
   return (
+  <>
     <form action={formAction}>
-      {state}
-      <button type="submit">Increment</button>
+      <button disabled={isPending || state !== ""} type="submit">{isPending ? "Gerando Link..." : state === "" ? "Gerar Link" : "Link Gerado"}</button>
     </form>
+    {state === "" ? <></> : <a href={state} target="_blank"><span>{"Link do WhatsApp"} </span></a>}
+  </>
   );
 };
