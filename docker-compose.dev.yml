@@ -9,6 +9,7 @@ services:
     command: sh -c "chmod +x ./.docker/keep-container-alive.sh && ./.docker/keep-container-alive.sh"
     ports:
       - 3000:3000
+      - 3001:3001
     volumes:
       - .:/home/node/tibia-4-fun
       - pnpm-store:/node/.local/share/pnpm/store
