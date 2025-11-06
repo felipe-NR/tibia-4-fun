@@ -11,4 +11,5 @@ export default defineConfig({
     port: 3001,
   },
   plugins: [react()],
+  base: "/tibia-4-fun/",
 });
