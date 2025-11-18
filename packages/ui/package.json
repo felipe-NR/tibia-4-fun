@@ -21,7 +21,7 @@
     "@tibia-4-fun/eslint-config": "workspace:*",
     "@tibia-4-fun/typescript-config": "workspace:*",
     "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
+    "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.0",
     "typescript": "~5.9.3"
   }
