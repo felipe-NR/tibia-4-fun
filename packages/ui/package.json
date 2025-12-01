@@ -16,7 +16,7 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.1",
     "@tibia-4-fun/eslint-config": "workspace:*",
     "@tibia-4-fun/typescript-config": "workspace:*",
