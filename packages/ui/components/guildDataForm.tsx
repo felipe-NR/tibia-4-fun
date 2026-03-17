@@ -7,7 +7,7 @@ export const GuildDataForm = () => {
     previousState: string,
   ) => {
     try {
-      const fetchGuildData = await fetch("https://wpp-daily-xp.onrender.com/generate-link");
+      const fetchGuildData = await fetch(`${import.meta.env.VITE_API_URL}/generate-link`);
       const data = await fetchGuildData.json();
             const {headers, tableData, replyMessage, apiWhatsappLink, time} = data;
       console.log("Fetched guild data:", data);
